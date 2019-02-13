@@ -1,0 +1,58 @@
+.logoPhone{
+  height: 100px;
+  width: 100px;
+}
+
+.fa-facebook-square{
+  font-size: 30px;
+}
+
+.fa-twitter-square{
+  font-size: 30px;
+}
+
+.fa-instagram{
+  font-size: 30px;
+}
+
+.fa-rss-square{
+  font-size: 30px;
+}
+
+.p1{
+margin-top : 80px;
+}
+
+.p2{
+margin-top: 80px;
+}
+
+.black
+{
+  background-color: black;
+}
+
+.footer-bottom{
+  background-color: black;
+}
+
+.copyright{
+  color: white;
+  text-align: center;
+}
+
+.inputfooter{
+  padding-top: 80px;
+}
+
+.inputfooter1, .inputfooter2, .textarea {
+  margin-bottom: 10px;
+}
+
+.button1 {
+  margin-top: 10px;
+}
+
+.imgcb1 {
+  padding-left : 300px;
+}
