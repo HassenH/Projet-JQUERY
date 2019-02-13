@@ -92,3 +92,18 @@ height: 90%;
 
 button {color: inherit;
 border: 0px;}
+
+.productBg{
+    background-color:#F6F6F6;
+}
+.productInfo{
+    border-top: 4px solid #F6F6F6;
+}
+.productShop{
+    /* visibility: hidden; */
+    border-top: 4px solid #F6F6F6;
+}
+
+.product{
+    margin-top: 2%;
+}

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <title>Projet E-commerce</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div class="navMenu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <title>Projet E-commerce</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navMenu">
     <nav class="navbar navbar-inverse" id="generalNavbar">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -29,126 +29,253 @@
     <div class="secondNavbar">
       <nav class="navbar">
         <div class="container">
-            <div class="col-2">
-              <a class="nav-item nav-link" href="#">Apple</a>
-              <ul>Iphone X</ul>
-              <ul>Iphone XE</ul>
-            </div>
-            <div class="col-2">
-              <a class="nav-item nav-link" href="#">Samsung</a>
-              <ul>Iphone X</ul>
-              <ul>Iphone XE</ul>
-            </div>
-            <div class="col-2">
-              <a class="nav-item nav-link" href="#">Huawai</a>
-              <ul>Iphone X</ul>
-              <ul>Iphone XE</ul>
-            </div>
-            <div class="col-2">
-              <a class="nav-item nav-link" href="#">Note</a>
-            </div>
+          <div class="col-2">
+            <a class="nav-item nav-link" href="#">Apple</a>
+            <ul>Iphone X</ul>
+            <ul>Iphone XE</ul>
+          </div>
+          <div class="col-2">
+            <a class="nav-item nav-link" href="#">Samsung</a>
+            <ul>Iphone X</ul>
+            <ul>Iphone XE</ul>
+          </div>
+          <div class="col-2">
+            <a class="nav-item nav-link" href="#">Huawai</a>
+            <ul>Iphone X</ul>
+            <ul>Iphone XE</ul>
+          </div>
+          <div class="col-2">
+            <a class="nav-item nav-link" href="#">Note</a>
           </div>
         </div>
       </div>
     </nav>
+  </div>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2">
+                <img src="assets/img/logobrand.png" alt="" id="logoBasket">
+              </div>
+              <div class="col-9 offset-1">
+                <h4 class="modal-title" id="titleModal">Votre PANIER:</h4>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-success">Procéder au paiement</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contenu -->
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="container-fluid">
-              <div class="row">
-          <div class="col-2">
-            <img src="assets/img/logobrand.png" alt="" id="logoBasket">
+  <div class="productContent">
+    <div class="container">
+      <div class="row productBg">
+        <!-- Première ligne -->
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body productInfo">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
           </div>
-          <div class="col-9 offset-1">
-            <h4 class="modal-title" id="titleModal">Votre PANIER:</h4>
-</div>
-  </div>
-  </div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
           </div>
-          <div class="modal-body">
-            ...
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-            <button type="button" class="btn btn-success">Procéder au paiement</button>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://eg.jumia.is/n-qTbKeizpRJBdw_krD6KsojduE=/fit-in/220x220/filters:fill(white)/product/33/48365/1.jpg?4475" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Iphone XS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text d-flex justify-content-end">895$</p>
+            </div>
+            <div class="card-body productShop">
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-to-favorites.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/share.png"></a>
+              <a href="#" class="card-link"><img src="https://img.icons8.com/ios/50/000000/add-shopping-cart.png"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <!-- Contenu -->
-  <div class="productContent">
-    <footer>
+  </div>
+
+  <footer>
     <div class="footer container">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
           <img src="assets/img/logobrand.png" alt="logoPhone" class="logoPhone">
           <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. <br>
             Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fas fa-rss-square"></i>
-        </div>
-        <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-          <ul class="p1 list-unstyled">
-							<li class="firstchildSitemapfooter">Achat</li>
-							<li><a class="footerWhite"href="#">Nouveau produits</a></li>
-							<li><a class="footerWhite" href="#">Produit populaire</a></li>
-							<li><a class="footerWhite" href="#">Produit récent</a></li>
-							<li><a class="footerWhite" href="#"></a></li>
-							<li><a class="footerWhite" href="#">Fournisseurs</a></li>
-							<li><a class="footerWhite" href="#">Produits spéciaux</a></li>
-							<li><a class="footerWhite" href="#">Suivi de commande</a></li>
-							<li><a class="footerWhite" href="#">Sortir</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-          <ul class="p2 list-unstyled">
-							<li class="secondchildSitemapfooter">Mon compte</li>
-							<li><a class="footerWhite"href="#">Modifier mes données</a></li>
-							<li><a class="footerWhite" href="#">Mon adresse</a></li>
-							<li><a class="footerWhite" href="#">Ma liste d'envie</a></li>
-							<li><a class="footerWhite" href="#">Mes coordonnées</a></li>
-							<li><a class="footerWhite" href="#">Suivi de commande</a></li>
-							<li><a class="footerWhite" href="#">Mon panier</a></li>
-							<li><a class="footerWhite" href="#">Commande terminée</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-          <form class="inputfooter">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-rss-square"></i>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+            <ul class="p1 list-unstyled">
+              <li class="firstchildSitemapfooter">Achat</li>
+              <li><a class="footerWhite"href="#">Nouveau produits</a></li>
+              <li><a class="footerWhite" href="#">Produit populaire</a></li>
+              <li><a class="footerWhite" href="#">Produit récent</a></li>
+              <li><a class="footerWhite" href="#"></a></li>
+              <li><a class="footerWhite" href="#">Fournisseurs</a></li>
+              <li><a class="footerWhite" href="#">Produits spéciaux</a></li>
+              <li><a class="footerWhite" href="#">Suivi de commande</a></li>
+              <li><a class="footerWhite" href="#">Sortir</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+            <ul class="p2 list-unstyled">
+              <li class="secondchildSitemapfooter">Mon compte</li>
+              <li><a class="footerWhite"href="#">Modifier mes données</a></li>
+              <li><a class="footerWhite" href="#">Mon adresse</a></li>
+              <li><a class="footerWhite" href="#">Ma liste d'envie</a></li>
+              <li><a class="footerWhite" href="#">Mes coordonnées</a></li>
+              <li><a class="footerWhite" href="#">Suivi de commande</a></li>
+              <li><a class="footerWhite" href="#">Mon panier</a></li>
+              <li><a class="footerWhite" href="#">Commande terminée</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <form class="inputfooter">
               <input type="text" name="name" placeholder="Votre nom..." class="inputfooter1">
               <input type="text" name="email" placeholder="Votre email..." class="inputfooter2">
               <textarea class="height-80" name="message" placeholder="Tapez votre message..." class="textarea"></textarea><br>
               <button class="button1" type="submit">Envoyer</button>
-          </form>
-        </div>
-
-      </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-xs-12 col-md-6 col-lg-6">
-              <p class="copyright"> 2019. All Rights Reserved.</p>
-            </div>
-            <div class="col-12 col-xs-12 col-md-6 col-lg-6 imgcb1">
-              <a href="#"><img src="assets/img/cb1.jpeg" alt="" class="imgcb"></a>
-              <a href="#"><img src="assets/img/cb2.jpeg" alt="" class="imgcb"></a>
-              <a href="#"><img src="assets/img/cb3.jpeg" alt="" class="imgcb"></a>
-              <a href="#"><img src="assets/img/cb4.jpeg" alt="" class="imgcb"></a>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-      </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-md-6 col-lg-6">
+            <p class="copyright"> 2019. All Rights Reserved.</p>
+          </div>
+          <div class="col-12 col-xs-12 col-md-6 col-lg-6 imgcb1">
+            <a href="#"><img src="assets/img/cb1.jpeg" alt="" class="imgcb"></a>
+            <a href="#"><img src="assets/img/cb2.jpeg" alt="" class="imgcb"></a>
+            <a href="#"><img src="assets/img/cb3.jpeg" alt="" class="imgcb"></a>
+            <a href="#"><img src="assets/img/cb4.jpeg" alt="" class="imgcb"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
 </html>
