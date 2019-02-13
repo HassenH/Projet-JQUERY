@@ -1,0 +1,35 @@
+a{
+  color: black;
+  font-weight: bold;
+}
+a:hover{
+  color: #4267b2;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#logobrand{
+  width: 30%;
+  height: 30%;
+}
+
+#logoBasket{
+  width: 120%;
+  height: 120%;
+}
+#checkoutImg{
+  width: 90%;
+height: 90%;
+}
+
+#generalNavbar {
+  border-bottom: 2px solid black;
+  background-color: #F6F6F6;
+}
+.secondNavbar {
+  background-color: #F6F6F6;
+}
+
+button {color: inherit;
+border: 0px;}
