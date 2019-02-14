@@ -104,6 +104,10 @@ height: 90%;
 button {color: inherit;
 border: 0px;}
 
+.imgCart {
+  width: 50%;
+}
+
 #basketButtonDelete{
   width: 30%;
 }
