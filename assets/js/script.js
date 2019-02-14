@@ -2,15 +2,10 @@ $(function(){
   $('#secondNavbar').hide();
 
   $('#phoneHover').hover(function(){
-<<<<<<< HEAD
     $('#secondNavbar').slideDown('slow');
 });
 $('.testeee').mouseleave(function(){
   $('#secondNavbar').slideUp('slow');
-=======
-    $('.secondNavbar').show();
-  
->>>>>>> content
   });
   // Animation des produits dans le content
   $('.productShop').hide();
@@ -40,12 +35,3 @@ $('.testeee').mouseleave(function(){
   })
 });
 
-<<<<<<< HEAD
-
-$("#formContact").click(function(event) {
-	event.preventDefault();
-	var specsTop = $(".footer").offset().top;
-	$("html, body").animate({ scrollTop: specsTop - 60 }, "slow");
-});
-=======
->>>>>>> content
