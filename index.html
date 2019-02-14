@@ -11,46 +11,54 @@
 <body>
   <!-- Navbar -->
   <div class="navMenu">
-    <nav class="navbar navbar-inverse" id="generalNavbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="assets/img/logobrand.png" alt="" id="logobrand"></a>
-        </div>
-        <a class="nav navbar-nav" href="#">ACCUEIL</a>
-        <div class="test">
-          <a class="nav navbar-nav" href="#" id="phoneHover">NOS TELEPHONES</a>
-        </div>
-        <a class="nav navbar-nav" href="#">NOUS CONTACTER</a>
-        <ul class="nav navbar-nav navbar-right">
-          <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter"><img src="assets/img/checkout.png" alt="" id="checkoutImg"></button>
-        </ul>
+
+    <nav class="navbar navbar-light navbar-expand-md justify-content-center" id="generalNavbar">
+    <a class="navbar-brand mr-0" href="#"><img src="assets/img/logobrand.png" alt="" id="logobrand"></a>
+      <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0" id="collapsingNavbar2">
+          <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                    <a class="nav navbar-nav" href="#">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav navbar-nav" href="#" id="phoneHover">NOS&nbsp;TELEPHONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav navbar-nav" href="#" id="formContact">NOUS&nbsp;CONTACTER</a>
+              </li>
+          </ul>
+          <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter"><img class="img-fluid"src="assets/img/checkout.png" alt="" id="checkoutImg"></button>
+
+          </ul>
       </div>
-    </nav>
-    <div class="secondNavbar">
-      <nav class="navbar">
-        <div class="container">
-          <div class="col-2">
-            <a class="nav-item nav-link" href="#">Apple</a>
-            <ul>Iphone X</ul>
-            <ul>Iphone XE</ul>
-          </div>
-          <div class="col-2">
-            <a class="nav-item nav-link" href="#">Samsung</a>
-            <ul>Iphone X</ul>
-            <ul>Iphone XE</ul>
-          </div>
-          <div class="col-2">
-            <a class="nav-item nav-link" href="#">Huawai</a>
-            <ul>Iphone X</ul>
-            <ul>Iphone XE</ul>
-          </div>
-          <div class="col-2">
-            <a class="nav-item nav-link" href="#">Note</a>
-          </div>
+  </nav>
+    <nav class="navbar" id="secondNavbar">
+      <div class="container testeee">
+        <div class="col-2">
+          <a class="nav-item nav-link" href="#">Apple</a>
+          <ul><a href="#">Iphone X</a></ul>
+          <ul><a href="#">Iphone XE</a></ul>
+        </div>
+        <div class="col-2">
+          <a class="nav-item nav-link" href="#">Samsung</a>
+          <ul><a href="#">Galaxy S9</a></ul>
+          <ul><a href="#">Galaxy SE</a></ul>
+        </div>
+        <div class="col-2">
+          <a class="nav-item nav-link" href="#">Huawei</a>
+          <ul>Iphone X</ul>
+          <ul>Iphone XE</ul>
+        </div>
+        <div class="col-2">
+          <a class="nav-item nav-link" href="#">One Plus</a>
         </div>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
@@ -70,7 +78,36 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2">
+                <p>#1</p>
+              </div>
+              <div class="col-2">
+                <p>Photo Produit</p>
+              </div>
+              <div class="col-3">
+                <p>Descritpion</p>
+              </div>
+              <div class="col-2">
+                <p>Nombre</p>
+              </div>
+              <div class="col-1">
+                <p>Prix</p>
+              </div>
+              <div class="col-2">
+                <img src="assets/img/deletebutton.png" alt="boutonsupprime" id="basketButtonDelete">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 offset-2">
+                <p>TOTAL COMMANDE</p>
+              </div>
+              <div class="col-3">
+                <p>XXX Euros</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
@@ -273,7 +310,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
