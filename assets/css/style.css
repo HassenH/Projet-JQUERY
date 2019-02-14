@@ -118,8 +118,12 @@ border: 0px;}
     border-top: 4px solid #F6F6F6;
 }
 .productShop{
-    /* visibility: hidden; */
     border-top: 4px solid #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+.productShop * {
+    width: 100%;
 }
 
 .product{
